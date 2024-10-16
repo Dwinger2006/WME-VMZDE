@@ -2,7 +2,7 @@
 // @name WME-VMZDE
 // @description This script create buttons to open several Traffic Managemant Plattforms in Germany, using the WME paramenters where supported.
 // @namespace https://github.com/poxonline/WME-VMZDE/blob/main/WMEVMZDE.user.js
-// @version 2024.10.16.02
+// @version 2024.10.16.03
 // @updateURL https://github.com/poxonline/WME-VMZDE/raw/main/WMEVMZDE.user.js
 // @downloadURL https://github.com/poxonline/WME-VMZDE/raw/main/WMEVMZDE.user.js
 // @include https://*.waze.com/editor*
@@ -18,7 +18,7 @@
 // 1) install this script as GitHub script
 // 2) Click on any of the links includes to open, PL Data will be handed over where supported.
 
-var vmzde_version = '2024.10.16.02';
+var vmzde_version = '2024.10.16.03';
 
 /* eslint-env jquery */ //we are working with jQuery
 //indicate used variables to be assigned
@@ -185,7 +185,8 @@ nds_btn.click(function(){
                 firstProj= "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs";
                 var utm = proj4(firstProj,[lon,lat]);
 
-                var mapsUrl = 'https://danord.gdi-sh.de/viewer/resources/apps/lbvsh_baustelleninfos/index.html?lang=de&center=' + utm[0] + ',' + utm[1] + '&zoom=' + zoom;
+                var mapsUrl = 'https://danord.gdi-sh.de/viewer/resources/apps/lbvsh_baustelleninfos/index.html?lang=de&center='+utm[0]+'%2C'+utm[1]+'#/';
+                //var mapsUrl = 'https://danord.gdi-sh.de/viewer/resources/apps/lbvsh_baustelleninfos/index.html?lang=de&center='+utm[0]+','+utm[1]+'&zoom='+ zoom;
                 //var mapsUrl = 'https://danord.gdi-sh.de/viewer/resources/apps/lbvsh_baustelleninfos/index.html?lang=de#'+utm[0]+'%2C'+utm[1]+'#/';
                 window.open(mapsUrl,'_blank');
             }
