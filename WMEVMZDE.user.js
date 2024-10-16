@@ -2,7 +2,7 @@
 // @name WME-VMZDE
 // @description This script create buttons to open several Traffic Managemant Plattforms in Germany, using the WME paramenters where supported.
 // @namespace https://github.com/poxonline/WME-VMZDE/blob/main/WMEVMZDE.user.js
-// @version 2024.03.04.03
+// @version 2024.10.16.01
 // @updateURL https://github.com/poxonline/WME-VMZDE/raw/main/WMEVMZDE.user.js
 // @downloadURL https://github.com/poxonline/WME-VMZDE/raw/main/WMEVMZDE.user.js
 // @include https://*.waze.com/editor*
